@@ -1,0 +1,40 @@
+﻿<Window x:Class="IRCe.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="533.707" Width="723.049">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF182432" Offset="0"/>
+            <GradientStop Color="#FF93BBE7" Offset="1"/>
+            <GradientStop Color="#FF23405E" Offset="0.322"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid Margin="50.312,46.439,48.468,0" VerticalAlignment="Top" Height="237.071" Width="617.886" Opacity="0.6" OpacityMask="#FF3486DB">
+        <Grid.Effect>
+            <DropShadowEffect Color="#FF343985" ShadowDepth="4"/>
+        </Grid.Effect>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF214A76" Offset="0"/>
+                <GradientStop Color="#FF4AA0FF" Offset="1"/>
+                <GradientStop Color="#FF1A436E" Offset="0.332"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Login" HorizontalAlignment="Left" Margin="221.983,-10.58,0,0" VerticalAlignment="Top" Height="72.439" Width="242.878" FontSize="48" FontFamily="NSimSun"/>
+        <TextBox Height="36.659" Margin="161.49,102.954,10.336,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontFamily="SimSun"/>
+        <TextBox Height="36.659" Margin="161.49,155.687,10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontFamily="SimSun"/>
+        <Label Content="Domain" HorizontalAlignment="Left" Margin="0,89.076,0,0" VerticalAlignment="Top" Height="64.984" Width="139.073" FontSize="36" FontFamily="NSimSun"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="0,139.613,0,0" VerticalAlignment="Top" Height="64.984" Width="162.117" FontSize="36" FontFamily="NSimSun"/>
+        <Button Content="Connect" HorizontalAlignment="Left" Height="66.169" Margin="187.96,268.796,0,-117.794" VerticalAlignment="Top" Width="240.174" FontSize="48" FontFamily="SimSun-ExtB" Cursor="Hand" BorderBrush="#FF761C1C"   PreviewMouseLeftButtonUp="Button_PreviewMouseLeftButtonUp" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FF519AE6" Offset="0"/>
+                    <GradientStop Color="#FF4190E1" Offset="0.312"/>
+                    <GradientStop Color="#FF4E84BC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="status" Content="isConnected" HorizontalAlignment="Left" Margin="161.49,192.346,0,0" VerticalAlignment="Top" Width="199.194" FontSize="20" Foreground="#FFFFD560" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
